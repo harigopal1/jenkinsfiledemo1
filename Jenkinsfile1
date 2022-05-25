@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('dev1') {
+            steps {
+                echo 'file dev1'
+            }
+        }
+         stage('test') {
+            steps {
+                echo 'file text1'
+            }
+        }
+         stage('validation') {
+            steps {
+                echo 'file validation1'
+            }
+        }
+    }
+}
